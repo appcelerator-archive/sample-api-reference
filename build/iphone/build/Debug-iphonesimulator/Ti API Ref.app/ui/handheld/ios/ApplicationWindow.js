@@ -1,0 +1,1 @@
+/Users/adecena/Documents/Titanium Studio Workspace/Ti API Ref/Resources/ui/handheld/ios/ApplicationWindow.js
