@@ -1,1 +1,0 @@
-/Users/adecena/Documents/Titanium Studio Workspace/Ti API Ref/Resources/ui/tablet/ApplicationWindow.js

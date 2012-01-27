@@ -39,7 +39,9 @@ exports.fetchNavData = function() {
 			data.push({
 				title:modules[i],
 				hasChild:true,
-				objects:api.objects
+				objects:api.objects,
+				examples:api.examples,
+				platforms:api.platforms
 			});
 		}
 	}
