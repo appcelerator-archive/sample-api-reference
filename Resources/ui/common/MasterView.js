@@ -1,27 +1,14 @@
 //Master View Component Constructor
-exports.MasterView = function() {
+exports.MasterView = function(_data) {
 	//create object instance, parasitic subclass of Observable
 	var self = Ti.UI.createView({
 		backgroundColor:'white'
 	});
 	
-	var data = require('services/data'),
-		tableData = data.fetchNavData();
 	
-	//some dummy data for our table view
-	/*
-	var tableData = [
-		{title:'Apples', price:'1.25', hasChild:true},
-		{title:'Grapes', price:'1.50', hasChild:true},
-		{title:'Oranges', price:'2.50', hasChild:true},
-		{title:'Bananas', price:'1.50', hasChild:true},
-		{title:'Pears', price:'1.40', hasChild:true},
-		{title:'Kiwis', price:'1.00', hasChild:true}
-	];
-	*/
-	
+	//populate the table with the nav data
 	var table = Ti.UI.createTableView({
-		data:tableData
+		data:_data
 	});
 	self.add(table);
 	
@@ -29,7 +16,9 @@ exports.MasterView = function() {
 	table.addEventListener('click', function(e) {
 		self.fireEvent('itemSelected', {
 			name:e.rowData.title,
-			objects:e.rowData.objects
+			objects:e.rowData.objects,
+			examples:e.rowData.examples,
+			platforms:e.rowData.platforms
 		});
 	});
 	
