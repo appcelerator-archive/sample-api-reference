@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="masterView">Mastersicht</string>
+	<string name="detailView">Detailsicht</string>
+	<string name="select">Bitte einen Wert eingeben</string>
+	<string name="youEntered">Du hast %s eingegeben</string>
+</resources>
